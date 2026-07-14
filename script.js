@@ -597,7 +597,7 @@ function initFAQ() {
 // ===== CONTACT FORM (FORMSUBMIT — AJAX avec repli natif) =====
 function initContactForm() {
   // Doit correspondre à l'email utilisé dans l'attribut action= du <form> en HTML
-  const CONTACT_EMAIL = "marketing@bigseefaragency.com";
+  const CONTACT_EMAIL = "commercial@nbautomobile.com";
   const contactForm = document.getElementById('contactForm');
   const contactStatus = document.getElementById('contactStatus') || document.getElementById('formSuccess');
   const contactBtn = document.getElementById('contactSubmitBtn') || document.getElementById('formSubmit');

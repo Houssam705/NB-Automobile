@@ -11,7 +11,7 @@ const vehicules = [
     carrosserie: "Berline",
     prix: 54900,
     badge: "Neuf",
-    image: "https://fiducar.com/wp-content/uploads/2025/02/1-37.jpg"
+    image: "https://www.leguideauto.ma/contents/cars/pictures/2021/12/large/oRcpIpaOSsjUvdWJ372IhEwRY2VS0WlkJH0pIsZV.webp"
   },
   {
     id: 2,

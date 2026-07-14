@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-mgx-overview="title">
+      NB Automobile — Votre partenaire automobile en France
+    </title>
+    <!--<link data-mgx-overview="icon" rel="icon" href="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />-->
+    <meta
+      data-mgx-overview="description"
+      name="description"
+      content="NB Automobile — Vente, location et importation de véhicules premium vers l'Algérie. Votre partenaire automobile de confiance en France."
+    />
+    <meta
+      data-mgx-overview="og:title"
+      property="og:title"
+      content="NB Automobile"
+    />
+    <meta
+      data-mgx-overview="og:description"
+      property="og:description"
+      content="Vente, location et importation de véhicules premium vers l'Algérie."
+    />
+    <meta
+      data-mgx-overview="og:image"
+      property="og:image"
+      content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png"
+    />
+    <meta
+      data-mgx-overview="twitter:title"
+      name="twitter:title"
+      content="NB Automobile"
+    />
+    <meta
+      data-mgx-overview="twitter:description"
+      name="twitter:description"
+      content="Vente, location et importation de véhicules premium vers l'Algérie."
+    />
+    <meta
+      data-mgx-overview="twitter:image"
+      name="twitter:image"
+      content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png"
+    />
+    <link rel="icon" type="image/png" href="./img/nbAUTO.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header id="navbar" class="navbar">
+      <div class="navbar-inner">
+        <a href="#accueil" class="logo">
+          <!--<link rel="icon" href="./frame/NB1.png" />-->
+          NB <span class="text-rouge">AUTOMOBILE</span>
+        </a>
+        <nav class="nav-desktop">
+          <a href="#accueil" class="nav-link">Accueil</a>
+          <a href="#vehicules" class="nav-link">Véhicules</a>
+          <a href="#import" class="nav-link">Import Algérie</a>
+          <a href="#services" class="nav-link">Nos Services</a>
+          <a href="#apropos" class="nav-link">À propos</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a
+            href="https://wa.me/213551854927"
+            target="_blank"
+            class="btn-ghost btn-sm"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2Z"
+              />
+            </svg>
+            WhatsApp
+          </a>
+          <a href="#vehicules" class="btn-primary btn-sm">Voir les véhicules</a>
+        </div>
+        <button id="menuBtn" class="menu-toggle" aria-label="Ouvrir le menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="mobile-menu">
+        <nav class="mobile-nav">
+          <a href="#accueil" class="mobile-link">Accueil</a>
+          <a href="#vehicules" class="mobile-link">Véhicules</a>
+          <a href="#import" class="mobile-link">Import Algérie</a>
+          <a href="#services" class="mobile-link">Nos Services</a>
+          <a href="#apropos" class="mobile-link">À propos</a>
+          <a href="#contact" class="mobile-link">Contact</a>
+          <a
+            href="https://wa.me/213551854927"
+            target="_blank"
+            class="btn-primary mobile-cta"
+            >Contact WhatsApp</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="accueil" class="hero">
+      <!-- Particle canvas -->
+      <canvas id="particleCanvas" class="hero-particles"></canvas>
+      <!-- Background image with parallax -->
+      <div class="hero-bg" id="heroBg">
+        <img
+          src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=2000&auto=format&fit=crop"
+          alt="Véhicule premium"
+          loading="eager"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Animated route line -->
+      <svg class="hero-route" viewBox="0 0 1200 700" preserveAspectRatio="none">
+        <path
+          d="M 150 180 C 400 260, 650 420, 1050 560"
+          stroke="var(--rouge)"
+          stroke-width="2"
+          fill="none"
+          class="route-line"
+        />
+        <circle cx="150" cy="180" r="6" fill="#ffffff" class="route-dot" />
+        <circle
+          cx="1050"
+          cy="560"
+          r="6"
+          fill="var(--rouge)"
+          class="route-dot"
+        />
+      </svg>
+
+      <div class="hero-content">
+        <p class="hero-tag reveal">Paris → Algérie</p>
+        <h1 class="hero-title reveal">NB AUTOMOBILE</h1>
+        <p class="hero-subtitle reveal">
+          Votre partenaire automobile en France
+        </p>
+        <p class="hero-desc reveal">
+          Vente • Location • Importation vers l'Algérie
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#vehicules" class="btn-primary btn-lg"
+            >Découvrir nos véhicules</a
+          >
+          <a href="#contact" class="btn-ghost btn-lg">Demander un devis</a>
+          <a
+            href="https://wa.me/213551854927"
+            target="_blank"
+            class="btn-ghost btn-lg"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2Z"
+              />
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll reveal">
+        <span>Défiler</span>
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= POURQUOI NOUS ================= -->
+    <section class="section" id="pourquoi">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Pourquoi nous ?</span>
+          <h2 class="section-title">
+            Une confiance construite<br />dès le premier contact
+          </h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">🚗</div>
+            <h3 class="feature-title">Véhicules neufs</h3>
+            <p class="feature-desc">
+              Un large choix de modèles neufs, toutes marques, disponibles
+              immédiatement.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">🚘</div>
+            <h3 class="feature-title">Véhicules de moins de 3 ans</h3>
+            <p class="feature-desc">
+              Des occasions récentes, sélectionnées et contrôlées avant la
+              vente.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3 class="feature-title">Garantie constructeur</h3>
+            <p class="feature-desc">
+              Chaque véhicule conserve sa garantie constructeur en cours de
+              validité.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">📋</div>
+            <h3 class="feature-title">Historique vérifié</h3>
+            <p class="feature-desc">
+              Carnet d'entretien, kilométrage et historique contrôlés avant
+              publication.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">📦</div>
+            <h3 class="feature-title">Accompagnement import</h3>
+            <p class="feature-desc">
+              De l'achat à la livraison en Algérie, chaque étape est prise en
+              charge.
+            </p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">🤝</div>
+            <h3 class="feature-title">Service personnalisé</h3>
+            <p class="feature-desc">
+              Un conseiller dédié vous suit tout au long de votre projet
+              automobile.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOS MARQUES ================= -->
+    <section class="brands-section">
+      <span class="section-tag">Nos marques partenaires</span>
+      <div class="brands-track-wrapper">
+        <div class="brands-track" id="brandsTrack">
+          <div class="brand-item">MERCEDES</div>
+          <div class="brand-item">BMW</div>
+          <div class="brand-item">AUDI</div>
+          <div class="brand-item">VOLKSWAGEN</div>
+          <div class="brand-item">PEUGEOT</div>
+          <div class="brand-item">RENAULT</div>
+          <div class="brand-item">TOYOTA</div>
+          <div class="brand-item">HYUNDAI</div>
+          <div class="brand-item">KIA</div>
+          <div class="brand-item">PORSCHE</div>
+          <!-- Duplicated for seamless loop -->
+          <div class="brand-item">MERCEDES</div>
+          <div class="brand-item">BMW</div>
+          <div class="brand-item">AUDI</div>
+          <div class="brand-item">VOLKSWAGEN</div>
+          <div class="brand-item">PEUGEOT</div>
+          <div class="brand-item">RENAULT</div>
+          <div class="brand-item">TOYOTA</div>
+          <div class="brand-item">HYUNDAI</div>
+          <div class="brand-item">KIA</div>
+          <div class="brand-item">PORSCHE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VEHICULES ================= -->
+    <section id="vehicules" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Catalogue</span>
+          <h2 class="section-title">Nos véhicules disponibles</h2>
+          <p class="section-desc">
+            Sélection premium, vérifiée et prête pour la vente ou l'export.
+          </p>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-container reveal">
+          <div class="search-wrapper">
+            <svg
+              class="search-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Rechercher un véhicule (marque, modèle, type...)"
+            />
+            <button
+              id="search-clear"
+              class="search-clear hidden"
+              aria-label="Effacer la recherche"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters-container reveal">
+          <div class="filters-grid">
+            <div class="filter-group">
+              <label>Marque</label>
+              <select id="filter-marque" class="filter-select">
+                <option value="">Toutes</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Renault">Renault</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Prix</label>
+              <select id="filter-prix" class="filter-select">
+                <option value="">Tous</option>
+                <option value="0-20000">&lt; 20 000 €</option>
+                <option value="20000-40000">20 000 – 40 000 €</option>
+                <option value="40000-60000">40 000 – 60 000 €</option>
+                <option value="60000+">+ 60 000 €</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Année</label>
+              <select id="filter-annee" class="filter-select">
+                <option value="">Toutes</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Motorisation</label>
+              <select id="filter-motorisation" class="filter-select">
+                <option value="">Toutes</option>
+                <option value="Essence">Essence</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Hybride">Hybride</option>
+                <option value="Électrique">Électrique</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Carrosserie</label>
+              <select id="filter-carrosserie" class="filter-select">
+                <option value="">Toutes</option>
+                <option value="SUV">SUV</option>
+                <option value="Berline">Berline</option>
+                <option value="Citadine">Citadine</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Transmission</label>
+              <select id="filter-transmission" class="filter-select">
+                <option value="">Toutes</option>
+                <option value="Automatique">Automatique</option>
+                <option value="Manuelle">Manuelle</option>
+              </select>
+            </div>
+            <div class="filter-btn-group">
+              <button id="btn-filtrer" class="btn-filter">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                </svg>
+                Filtrer
+              </button>
+              <button id="btn-reset" class="btn-reset">Réinitialiser</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results info -->
+        <div class="results-info reveal">
+          <span id="results-count">9 véhicules trouvés</span>
+          <div id="active-filters" class="active-filters"></div>
+        </div>
+
+        <!-- Vehicle grid -->
+        <div class="vehicle-grid" id="vehicleGrid"></div>
+
+        <!-- No results -->
+        <div id="no-results" class="no-results hidden">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+            <path d="M8 11h6" />
+          </svg>
+          <h3>Aucun véhicule trouvé</h3>
+          <p>Essayez de modifier vos critères de recherche.</p>
+        </div>
+
+        <div class="text-center mt-12 reveal">
+          <a href="#contact" class="btn-ghost btn-lg">Voir tout le catalogue</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IMPORT ALGERIE ================= -->
+    <section id="import" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Notre spécialité</span>
+          <h2 class="section-title">Import vers l'Algérie</h2>
+          <p class="section-desc">
+            Un parcours clair, sécurisé et accompagné, de Paris jusqu'à votre
+            porte en Algérie.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-step">01</span>
+              <h3 class="timeline-title">Choisissez votre véhicule</h3>
+              <p class="timeline-desc">
+                Parcourez notre catalogue ou demandez une recherche
+                personnalisée.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-step">02</span>
+              <h3 class="timeline-title">Validation du devis</h3>
+              <p class="timeline-desc">
+                Nous établissons un devis détaillé incluant tous les frais.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-step">03</span>
+              <h3 class="timeline-title">Achat sécurisé</h3>
+              <p class="timeline-desc">
+                Paiement encadré et documents vérifiés avant toute transaction.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-step">04</span>
+              <h3 class="timeline-title">Préparation administrative</h3>
+              <p class="timeline-desc">
+                Constitution complète du dossier d'export et des formalités
+                douanières.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-step">05</span>
+              <h3 class="timeline-title">Export</h3>
+              <p class="timeline-desc">
+                Transport organisé et suivi jusqu'au port ou point de livraison.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-content">
+              <span class="timeline-step">06</span>
+              <h3 class="timeline-title">Livraison</h3>
+              <p class="timeline-desc">
+                Réception de votre véhicule en Algérie, prêt à immatriculer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Nos Services</span>
+          <h2 class="section-title">Un accompagnement complet</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">🔍</div>
+            <h3>Recherche personnalisée</h3>
+            <p>
+              Nous trouvons le véhicule qui correspond exactement à votre
+              besoin.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🔧</div>
+            <h3>Inspection</h3>
+            <p>Contrôle technique et mécanique avant chaque vente.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">💰</div>
+            <h3>Négociation</h3>
+            <p>Le meilleur prix négocié en votre nom.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🔒</div>
+            <h3>Achat sécurisé</h3>
+            <p>Transactions encadrées et documents vérifiés.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">💳</div>
+            <h3>Financement</h3>
+            <p>Solutions de financement adaptées à votre projet.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🚙</div>
+            <h3>Location</h3>
+            <p>Location courte ou longue durée disponible.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🚢</div>
+            <h3>Export</h3>
+            <p>Organisation complète du transport vers l'Algérie.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">📄</div>
+            <h3>Immatriculation</h3>
+            <p>Accompagnement dans les démarches d'immatriculation.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">✅</div>
+            <h3>Garantie</h3>
+            <p>Garantie constructeur préservée sur chaque véhicule.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🚚</div>
+            <h3>Livraison</h3>
+            <p>Livraison suivie jusqu'à destination finale.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🎧</div>
+            <h3>Service après-vente</h3>
+            <p>Un interlocuteur dédié, même après la livraison.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section id="apropos" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Pourquoi acheter chez NB Automobile ?</span>
+          <h2 class="section-title">
+            La confiance se mesure<br />aussi en chiffres
+          </h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-plus">+</span>
+            <p class="stat-label">Clients satisfaits</p>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="1200">0</span>
+            <span class="stat-plus">+</span>
+            <p class="stat-label">Véhicules vendus</p>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-plus"></span>
+            <p class="stat-label">Marques partenaires</p>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-plus">%</span>
+            <p class="stat-label">Accompagnement</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEMOIGNAGES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Google Reviews</span>
+          <h2 class="section-title">Ce que disent nos clients</h2>
+        </div>
+        <div class="testimonials-wrapper reveal">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                « Accompagnement impeccable du premier contact jusqu'à la
+                livraison en Algérie. Rien à redire. »
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">KB</div>
+                <div>
+                  <p class="testimonial-name">Karim B.</p>
+                  <p class="testimonial-location">Alger, Algérie</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                « Véhicule conforme aux photos, documents en règle, export géré
+                du début à la fin. Je recommande à 100%. »
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SR</div>
+                <div>
+                  <p class="testimonial-name">Sofia R.</p>
+                  <p class="testimonial-location">Oran, Algérie</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                « Équipe réactive sur WhatsApp, devis clair, aucune mauvaise
+                surprise à la livraison. Très professionnel. »
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">YM</div>
+                <div>
+                  <p class="testimonial-name">Yanis M.</p>
+                  <p class="testimonial-location">Constantine, Algérie</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                « Service exceptionnel ! Mon BMW X3 est arrivé en parfait état.
+                Merci NB Automobile pour votre sérieux. »
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">AM</div>
+                <div>
+                  <p class="testimonial-name">Ahmed M.</p>
+                  <p class="testimonial-location">Annaba, Algérie</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                « Deuxième achat avec eux, toujours aussi satisfait.
+                Transparence totale sur les prix et les délais. »
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">HL</div>
+                <div>
+                  <p class="testimonial-name">Hassan L.</p>
+                  <p class="testimonial-location">Tlemcen, Algérie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-nav">
+            <button
+              id="prevTestimonial"
+              class="testimonial-btn"
+              aria-label="Précédent"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <div class="testimonials-dots" id="testimonialsDots"></div>
+            <button
+              id="nextTestimonial"
+              class="testimonial-btn"
+              aria-label="Suivant"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section section-alt">
+      <div class="container container-sm">
+        <div class="section-header reveal">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Vos questions, nos réponses</h2>
+        </div>
+        <div class="faq-list" id="faqList">
+          <div class="faq-item reveal">
+            <button class="faq-toggle">
+              <span>Comment acheter un véhicule ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>
+                Choisissez un véhicule dans notre catalogue, demandez un devis
+                via WhatsApp ou le formulaire de contact, puis validez l'achat
+                avec notre conseiller dédié. Le processus est simple et
+                sécurisé.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">
+              <span>Comment fonctionne l'import vers l'Algérie ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>
+                Nous gérons l'ensemble du processus : achat sécurisé,
+                préparation administrative complète, organisation du transport
+                maritime, et suivi jusqu'à la livraison en Algérie.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">
+              <span>Quels documents sont nécessaires ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>
+                La liste exacte des documents vous est communiquée par votre
+                conseiller selon votre situation. Nous vous accompagnons dans la
+                constitution de votre dossier complet.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">
+              <span>Quels sont les délais de livraison ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>
+                Les délais varient selon le véhicule et la destination. Un délai
+                estimé vous est communiqué avec le devis. En moyenne, comptez 2
+                à 4 semaines pour une livraison en Algérie.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">
+              <span>Quelle garantie s'applique ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>
+                La garantie constructeur en cours de validité est conservée sur
+                les véhicules concernés. Pour les véhicules neufs, la garantie
+                est complète.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">
+              <span>Quels moyens de paiement acceptez-vous ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>
+                Les modalités de paiement sont précisées avec votre conseiller
+                selon le type d'achat. Nous acceptons les virements bancaires et
+                proposons des solutions de financement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Parlons de votre projet</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div>
+                <p class="contact-label">Téléphone</p>
+                <p class="contact-value">0551 85 49 27</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">💬</div>
+              <div>
+                <p class="contact-label">WhatsApp</p>
+                <a
+                  href="https://wa.me/213551854927"
+                  target="_blank"
+                  class="contact-value contact-link"
+                  >Discuter maintenant</a
+                >
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">
+                  <a
+                    href="mailto:marketing@bigseefaragency.com"
+                    >marketing@bigseefaragency.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <p class="contact-label">Adresse</p>
+                <p class="contact-value">Paris, France</p>
+              </div>
+            </div>
+          </div>
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+            action="https://formsubmit.co/marketing@bigseefaragency.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Nouvelle demande — NB Automobile" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="form-group">
+              <label class="form-label">Nom complet</label>
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Votre nom"
+                class="form-input"
+                id="formName"
+              />
+              <span class="form-error" id="errorName"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Téléphone</label>
+                <input
+                  type="tel"
+                  name="telephone"
+                  required
+                  placeholder="Votre numéro"
+                  class="form-input"
+                  id="formPhone"
+                />
+                <span class="form-error" id="errorPhone"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Votre email"
+                  class="form-input"
+                  id="formEmail"
+                />
+                <span class="form-error" id="errorEmail"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Sujet</label>
+              <select class="form-input" id="formSubject" name="sujet">
+                <option value="">Choisir un sujet</option>
+                <option value="achat">Achat d'un véhicule</option>
+                <option value="import">Import vers l'Algérie</option>
+                <option value="location">Location</option>
+                <option value="devis">Demande de devis</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea
+                rows="4"
+                name="message"
+                placeholder="Décrivez votre projet automobile..."
+                class="form-input form-textarea"
+                id="formMessage"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn-primary btn-lg btn-full"
+              id="formSubmit"
+            >
+              <span class="btn-text">Envoyer la demande</span>
+              <span class="btn-loading hidden">
+                <svg
+                  class="spinner"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                  />
+                </svg>
+                Envoi en cours...
+              </span>
+            </button>
+            <div id="formSuccess" class="form-success hidden">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <p>
+                Merci ! Votre demande a bien été envoyée. Nous vous recontactons
+                sous 24h.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <p class="logo">NB <span class="text-rouge">AUTOMOBILE</span></p>
+            <p class="footer-desc">
+              Votre partenaire automobile de confiance en France. Vente,
+              location et importation vers l'Algérie.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Navigation</h4>
+              <a href="#accueil">Accueil</a>
+              <a href="#vehicules">Véhicules</a>
+              <a href="#import">Import Algérie</a>
+              <a href="#services">Services</a>
+            </div>
+            <div class="footer-col">
+              <h4>Contact</h4>
+              <a href="https://wa.me/213551854927" target="_blank">WhatsApp</a>
+              <a
+                href="/cdn-cgi/l/email-protection#d4b7bbb9b9b1a6b7bdb5b894bab6b5a1a0bbb9bbb6bdb8b1fab7bbb9"
+                >Email</a
+              >
+              <a href="tel:+213551854927">Téléphone</a>
+            </div>
+            <div class="footer-col">
+              <h4>Légal</h4>
+              <a href="#">Mentions légales</a>
+              <a href="#">Politique de confidentialité</a>
+              <a href="#">CGV</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 NB Automobile — Tous droits réservés.</p>
+          <div class="footer-social">
+            <a
+              href="https://wa.me/213551854927"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2Z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1.5"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp floating button -->
+    <a
+      href="https://wa.me/213551854927"
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Contacter sur WhatsApp"
+    >
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2Z"
+        />
+      </svg>
+    </a>
+
+    <!-- Back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="m18 15-6-6-6 6" />
+      </svg>
+    </button>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
